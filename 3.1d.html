@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>My Website</h1>
+        <ul>
+          <li><a href="#google-maps">Office Location</a></li>
+          <li>
+            <a href="#visualization-dashboard">Visualization Dashboard</a>
+          </li>
+          <li><a href="#live-chat">Live Chat</a></li>
+          <li><a href="#stock-prediction">Stock Prediction</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="google-maps">
+      <h2>Our Office Location</h2>
+      <p>XYZ company, abc Australia</p>
+      <div id="google-map"></div>
+    </section>
+        
+    <div class="form-container">
+        <form id="contact-form" action="#" method="POST">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    
+    <div class="canvas-container">
+        <canvas id="my-canvas" width="400" height="200"></canvas>
+    </div>
+
+     <div class="svg-container">
+        <svg width="200" height="100">
+            <circle cx="50" cy="50" r="30" stroke="black" stroke-width="2" fill="red" />
+            <rect x="80" y="20" width="80" height="60" stroke="black" stroke-width="2" fill="green" />
+        </svg>
+    </div>
+
+    
+    <section id="visualization-dashboard">
+      <h2>Visualization Dashboard</h2>
+      <p>Our Visualization Dashboard is designed to help you gain valuable insights from data. Whether you're analyzing business trends, tracking financial performance, or exploring any other dataset, these interactive visualizations make data exploration a breeze. You can interact with the charts, zoom in and out, and filter data points to focus on what matters most. It's a powerful tool for data-driven decision-making.</p>
+
+
+      <div class="charts-container">
+        <div class="chart">
+          <canvas id="bar-chart" width="400" height="200"></canvas>
+          <h3>Bar Chart</h3>
+          <p>The Bar Chart below displays data in a visually appealing way, making it easy to compare values across different categories or time periods. You can hover over the bars to see specific data points.</p>
+        </div>
+        </div>
+        <div class="chart">
+          <canvas id="line-chart" width="400" height="200"></canvas>
+          <h3>Line Chart</h3>
+          <p>The Line Chart provides a view of data trends over time. It's great for visualizing data that changes continuously, such as stock prices or temperature fluctuations.</p>
+        </div>
+        <div class="chart">
+          <canvas id="pie-chart" width="400" height="200"></canvas>
+          <h3>Pie Chart</h3>
+          <p>The Pie Chart is ideal for displaying data in parts of a whole. It shows the distribution of a dataset's categories or components, allowing you to see the proportions clearly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="live-chat">
+      <h2>Live Chat</h2>
+      <div class="chat-container">
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-input">
+          <input
+            type="text"
+            id="message-input"
+            placeholder="Type your message..."
+          />
+          <button id="send-button">Send</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="stock-prediction">
+      <h2>Stock Price Prediction</h2>
+      <form id="stock-form">
+        <label for="stock-symbol">Enter Stock Symbol:</label>
+        <input type="text" id="stock-symbol" name="stock-symbol" required />
+        <button type="submit">Predict</button>
+      </form>
+      <div id="prediction-result"></div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 My Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
